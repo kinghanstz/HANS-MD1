@@ -51,12 +51,7 @@
       "description": "Detect view-once messages",
       "value": "no",
       "required": false
-    },
-    "ANTILINK": {
-      "description": "Detect view-once links",
-      "value": "no",
-      "required": false
-    },
+    },    
     "BOT_NAME": {
       "description": "Give a name for your bot",
       "value": "HANS-MD",
