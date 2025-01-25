@@ -32,7 +32,7 @@ hans({
     const {
         repondre, msgRepondu, infosGroupe, auteurMsgRepondu,
         verifGroupe, verifAdmin, nomAuteurMessage, auteurMessage,
-        superUser, idBot
+        superUser, idBot, body, sender, key, ms
     } = commandeOptions;
   
     try {
@@ -45,7 +45,7 @@ hans({
         
         if (containsBadWord && conf.ANTI_BAD === 'yes') {
             await zk.sendMessage(dest, { delete: key }, { quoted: ms });
-            await zk.sendMessage(dest, { text: "🚫 ⚠️BAD WORDS NOT ALLOWED⚠️ 🚫" }, { quoted: ms });
+            await zk.sendMessage(dest, { text: "🚫 ⚠️ BAD WORDS NOT ALLOWED ⚠️ 🚫" }, { quoted: ms });
             return; // Stop further processing
         }
 
